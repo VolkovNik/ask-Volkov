@@ -1,0 +1,155 @@
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+main > .container {
+  padding: 60px 15px 0;
+}
+
+code {
+  font-size: 80%;
+}
+
+.line {
+  border: none;
+  height: 2px;
+  color: black;
+  background-color: black;
+}
+
+.aks-question {
+  padding-top: 20px;
+}
+
+.login-navbar {
+  padding-right: 50px;
+}
+
+.login {
+  padding-right: 20px;
+}
+
+.username {
+  color: white;
+}
+
+.user-navbar {
+  padding-right: 20px;
+}
+
+.logout {
+  padding-left: 5px;
+}
+
+.user-img {
+  padding-right: 10px;
+  max-width: 50px;
+}
+
+.new-questions-header {
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 40px;
+  margin-right: 10px;
+}
+
+.hot-questions-header {
+  padding-top: 50px;
+  padding-left: 0px;
+  padding-bottom: : 0px;
+  text-decoration: underline;
+}
+
+.question-box {
+	padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid;
+}
+
+.answer-box {
+  padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid;
+}
+
+#main-question {
+  border: 0px;
+}
+
+.question-img {
+	max-width: 150px;
+}
+
+.like-img {
+  max-width: 20px;
+}
+
+.dislike-img {
+  max-width: 20px;
+}
+
+.question-title {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.right-col {
+  padding-top: 100px;
+  padding-left: 70px;
+}
+
+.rating-counter {
+  margin-left: 55px;
+  margin-top: 20px;
+}
+
+.best-members {
+  padding-top: 15px;
+}
+
+.tag {
+  padding: 8px;
+}
+
+.member {
+  margin-bottom: 5px;
+}
+
+.list-best-members {
+  padding-left: 20px;
+}
+
+.pagination {
+  padding-left: 0px;
+  margin-top: 10px;
+}
+
+.question-extra {
+  position: absolute;
+  bottom: 0;
+  padding-left: 15px;
+  padding-top: 25px;
+}
+
+.question-tags {
+  padding-left: 10px;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.enter-new-question {
+  padding-top: 20px;
+}
+
+#enter-ans {
+  width: 850px;
+}
