@@ -1,0 +1,29 @@
+{% load static %}
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" name="top" href="{% url 'new' %}">AskVolkov</a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <form class="form-inline mt-2 mt-md-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">ASK!</button>
+            </form>
+        </div>
+        <div class="user-navbar">
+            <form class="form-inline">
+                <img class = "user-img" src ="{% static 'img/user.png' %}">
+                <div>
+                    <div>
+                        <div class="username">
+                            Username
+                        </div>
+                    </div>
+                    <div>
+                        <a class="settings underlined" href="{% url 'settings' %}">Settings</a>
+                        <a class="logout underlined" href ="{% url 'login' %}">Log out</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+</header>

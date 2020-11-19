@@ -1,0 +1,34 @@
+{% load static %}
+<div class="row question-box">
+    <div class="col-3">
+        <div class="row-9">
+            <img class="question-img" src="{% static 'img/question.jpg' %}"></img>
+        </div>
+        <div class="row-3 rating-counter">
+            <span class="rating">{{ question.like }}</span>
+            <div class="btn-group-vertical">
+                <button class="like-button"><img class="like-img" src="{% static 'img/like.jpg' %}"></button>
+                <button class="dislike-button"><img class="dislike-img" src="{% static 'img/dislike.jpg' %}"></button>
+            </div>
+        </div>
+    </div>
+    <div class="col-9  question-right">
+        <div class="question-title">
+            {{ question.title }}
+        </div>
+        <div class="question-text">
+            {{ question.text }}
+        </div>
+        <div class="row question-extra">
+            <div class="answer-counter">
+                <a href="{% url 'question' question.id %}">answer ({{ question.answers|length }})</a>
+            </div>
+            <div class="question-tags">
+                <span>Tags:</span>
+                {% for tag in question.tag.all %}
+                    <a class="underlined" href="{% url 'tag' tag %}">{{ tag }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

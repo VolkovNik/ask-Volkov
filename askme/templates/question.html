@@ -1,0 +1,31 @@
+{% extends 'inc/base.html' %}
+{% load static %}
+{% block navbar %}
+    {% include 'inc/unlogged_navbar.html' %}
+{% endblock navbar %}
+{% block content %}
+    {% include 'inc/question_for_answer.html' %}
+    <hr class="line">
+    {% for ans in answers %}
+        {% include 'inc/answer.html' %}
+    {% endfor %}
+    <hr class="line">
+    <div class="row">
+        <form class="needs-validation" novalidate>
+            <div class="form-row">
+                <div class="md-6 mb-3 ml-1">
+                    <textarea type="text" rows="8" class="form-control" id="enter-ans" placeholder="Enter your answer here..." required></textarea>
+                    <div class="invalid-feedback">
+                        Пожалуйста введите ответы.
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Answer</button>
+        </form>
+    </div>
+    {% if answers.has_next or answers.has_previous %}
+        {% with questions=answers %}
+            {% include 'inc/pagination.html' %}
+        {% endwith %}
+    {% endif %}
+{% endblock content %}

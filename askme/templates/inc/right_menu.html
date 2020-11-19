@@ -1,0 +1,19 @@
+<div class="row popular-tags">
+    <div>
+        <h2>Popular Tags</h2>
+        {% for tag in tags %}
+            <a class="tag" href="{% url 'tag' tag %}" style="color:black">{{ tag }}</a>
+        {% endfor %}
+        
+    </div>
+</div>
+<div class="row best-members">
+    <h2>Best Members</h2>
+    <ul class="list-best-members">
+        <li  class="member underlined" ><a href="">Mr.Freeman</a></li>
+        <li  class="member underlined" ><a href="">Dr.House</a></li>
+        <li  class="member underlined" ><a href="">Bender</a></li>
+        <li  class="member underlined" ><a href="">Queen Victoria</a></li>
+        <li  class="member underlined" ><a href="">V.Pupkin</a></li>
+    </ul>
+</div>

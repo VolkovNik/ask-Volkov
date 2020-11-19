@@ -1,0 +1,62 @@
+{% extends 'inc/base.html' %}
+{% load static %}
+{% block navbar %}
+    {% include 'inc/unlogged_navbar.html' %}
+{% endblock navbar %}
+{% block content %}
+    <div class="row pl-3">
+        <div class="new-questions-header">
+            <h2>Registration</h2>
+        </div>
+    </div>
+    <div class="alert alert-danger" role="alert">
+        Sorry, this email already registered!
+    </div>
+    <form class="login-form">
+        <div class="form-group row">
+            <label for="inputLogin" class="col-sm-2 col-form-label">Login</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputLogin" placeholder="dr_pepper">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputLogin" placeholder="dr.pepper@mail.ru">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputNickname" class="col-sm-2 col-form-label">Nickname</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputLogin" placeholder="Dr.Pepper">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword" placeholder="********">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputRPassword" class="col-sm-2 col-form-label">Repeat password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputRPassword" placeholder="********">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Upload avatar</label>
+            <div class="col-sm-10">
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputFile">
+                    <label class="custom-file-label mt-2" for="inputFile">Choose avatar...</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Register!</button>
+            </div>
+        </div>
+    </form>
+{% endblock content %}

@@ -1,0 +1,19 @@
+{% extends 'inc/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="row">
+        <div class="new-questions-header">
+            <h2>Tag:</h2>
+        </div>
+        <div class="new-questions-header">
+            <h2 class="header-tag">{{ tag }} </h2>
+        </div>
+    </div>
+    {% for question in questions %}
+        {% include 'inc/one_question.html' %}
+    {% endfor %}
+    {% if questions.has_next or questions.has_previous %}
+        {% include 'inc/pagination.html' %}
+    {% endif %}
+    
+{% endblock content %}
